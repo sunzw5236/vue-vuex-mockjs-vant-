@@ -1,6 +1,6 @@
 <!--  -->
 <template>
-  <van-tabbar v-model="active" @change="onChange">
+  <van-tabbar v-model="active" @change="onChange" class="tabbar_class">
     <van-tabbar-item icon="shop-o">首页</van-tabbar-item>
     <van-tabbar-item icon="description">分类</van-tabbar-item>
     <van-tabbar-item icon="fire-o">社区</van-tabbar-item>
