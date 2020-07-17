@@ -1,11 +1,14 @@
 <template>
   <div class="hello">
-    <van-loading /> 
-  <van-loading type="spinner" /></div>
+    <van-loading />
+    <van-loading type="spinner" />
+    <Tabbar></Tabbar>
+  </div>
 </template>
 
 <script>
 import { Loading } from "vant";
+import Tabbar from "@/components/common/Tabbar";
 export default {
   name: "HelloWorld",
   props: {
@@ -13,6 +16,7 @@ export default {
   },
   components: {
     [Loading.name]: Loading,
+    Tabbar,
   },
   mounted() {
     this.$axios

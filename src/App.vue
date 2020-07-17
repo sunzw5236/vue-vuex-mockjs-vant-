@@ -1,12 +1,41 @@
 <template>
   <div id="app">
-    <router-view/>
-    <div class="aa12">123</div>
+    <router-view />
+    <Tabbar
+      v-if="
+        [
+          '/home',
+          '/classification',
+          '/community',
+          '/self',
+          '/shopping_cart',
+        ].includes(this.$route.path)
+      "
+    ></Tabbar>
   </div>
 </template>
 
+<script>
+import Tabbar from "@/components/common/Tabbar.vue";
+export default {
+  data() {
+    return {};
+  },
+  components: {
+    Tabbar,
+  },
+  computed: {},
+
+  mounted() {},
+
+  methods: {},
+};
+</script>
+
 <style>
-#app,html,body{
+#app,
+html,
+body {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -19,5 +48,4 @@
   text-align: center;
   color: #2c3e50;
 }
-
 </style>

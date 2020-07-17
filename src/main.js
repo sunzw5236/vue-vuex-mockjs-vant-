@@ -5,6 +5,8 @@ import store from './store'
 import axios from 'axios'
 
 import '@/assets/js/rem.js'
+import '@/assets/css/reset.css'
+import '@/assets/font/taobao_icon/iconfont.css'
 
 import  '@/mock/mock.js'
 
